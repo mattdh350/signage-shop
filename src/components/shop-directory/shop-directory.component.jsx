@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import MenuItem from "../menu-item/menu-item.component";
-import "./directory.styles.scss";
+import ShopDirectoryMenuItem from "../shop-directory-menu-item/shop-directory-menu-item.component";
+import "./shop-directory.styles.scss";
 
-class Directory extends Component {
+class ShopDirectory extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -28,7 +28,7 @@ class Directory extends Component {
         {
           id: 3,
           title: "Brightsign Signage Products",
-          subtitle: "Cost-effective and reliable Signage devices",
+          subtitle: "Cost-effective, feature-packed Signage media players",
           linkUrl: "shop/brightsign",
           imageUrl:
             "https://www.brightsign.biz/application/files/7015/2710/1198/XT1144-fancy.png",
@@ -61,11 +61,11 @@ class Directory extends Component {
     return (
       <div className="directory">
         {this.state.categories.map(({ id, ...otherCategoryProps }) => (
-          <MenuItem key={id} {...otherCategoryProps} />
+          <ShopDirectoryMenuItem key={id} {...otherCategoryProps} />
         ))}
       </div>
     );
   }
 }
 
-export default Directory;
+export default ShopDirectory;

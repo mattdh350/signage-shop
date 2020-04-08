@@ -1,11 +1,11 @@
 import React from "react";
 import "./homepage.styles.scss";
-import Directory from "../../components/directory/directory.component";
+import ShopDirectory from "../../components/shop-directory/shop-directory.component";
 
 const HomePage = (props) => {
   return (
     <div className="homepage">
-      <Directory />
+      <ShopDirectory />
     </div>
   );
 };

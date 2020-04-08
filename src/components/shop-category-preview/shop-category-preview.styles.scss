@@ -1,0 +1,38 @@
+.shop-category-preview {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+
+  &.samsung-blue {
+    background-color: rgb(52, 104, 180);
+  }
+
+  &.lg-red {
+    background-color: rgb(182, 40, 40);
+  }
+
+  &.brightsign-purple {
+    background-color: rgb(104, 84, 161);
+  }
+
+  &.sky-blue {
+    background-color: rgb(10, 35, 114);
+  }
+
+  &.orange {
+    background-color: rgb(211, 132, 29);
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
+  }
+
+  .preview {
+    display: flex;
+    justify-content: space-between;
+  }
+}
