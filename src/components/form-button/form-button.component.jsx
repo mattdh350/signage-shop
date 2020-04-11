@@ -1,9 +1,12 @@
 import React from "react";
 import "./form-button.styles.scss";
 
-const FormButton = ({ children, ...otherProps }) => {
+const FormButton = ({ children, classNames, ...otherProps }) => {
   return (
-    <button className="form-button" {...otherProps}>
+    <button
+      className={`${classNames ? classNames : ""} form-button`}
+      {...otherProps}
+    >
       {children}
     </button>
   );
