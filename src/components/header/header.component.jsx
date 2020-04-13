@@ -4,10 +4,12 @@ import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
 import "./header.styles.scss";
 import LogoImage from "../../assets/logo.jpg";
+import CartIcon from "../cart-icon/cart-icon.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 
 const SignOut = () => auth.signOut();
 
-const Header = ({ currentUser }) => {
+const Header = ({ currentUser, showCartDropdown }) => {
   return (
     <div className="header">
       <Link to="/" className="logo-container">
@@ -32,12 +34,15 @@ const Header = ({ currentUser }) => {
             SIGN IN
           </Link>
         )}
+        <CartIcon />
       </div>
+      {showCartDropdown ? <CartDropdown /> : null}
     </div>
   );
 };
 
-const mapStateToProps = (state) => ({
-  currentUser: state.user.currentUser,
+const mapStateToProps = ({ user: { currentUser }, cart: { visible } }) => ({
+  currentUser,
+  showCartDropdown: visible,
 });
 export default connect(mapStateToProps)(Header);
