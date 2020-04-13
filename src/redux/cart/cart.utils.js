@@ -12,3 +12,7 @@ export const addItemToCart = (currentItems, newItem) => {
     return [...currentItems, { ...newItem, quantity: 1 }];
   }
 };
+
+export const removeItemFromCart = (currentItems, itemId) => {
+  return currentItems.filter((item) => item.id !== itemId);
+};
