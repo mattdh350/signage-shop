@@ -16,3 +16,20 @@ export const addItemToCart = (currentItems, newItem) => {
 export const removeItemFromCart = (currentItems, itemId) => {
   return currentItems.filter((item) => item.id !== itemId);
 };
+
+export const decreaseCartItemQuantity = (currentItems, item) => {
+  const cartItem = currentItems.find(
+    (currentItem) => currentItem.id === item.id
+  );
+  if (cartItem) {
+    const updatedItem = { ...item, quantity: item.quantity - 1 };
+    return updatedItem.quantity === 0
+      ? removeItemFromCart(currentItems, item.id)
+      : currentItems.map((currentItem) =>
+          currentItem.id === item.id
+            ? { ...currentItem, quantity: currentItem.quantity - 1 }
+            : currentItem
+        );
+    //: [...currentItems, updatedItem];
+  }
+};
