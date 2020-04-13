@@ -1,10 +1,10 @@
 import React from "react";
 import "./form-button.styles.scss";
 
-const FormButton = ({ children, classNames, ...otherProps }) => {
+const FormButton = ({ children, className, ...otherProps }) => {
   return (
     <button
-      className={`${classNames ? classNames : ""} form-button`}
+      className={`${className ? className : ""} form-button`}
       {...otherProps}
     >
       {children}

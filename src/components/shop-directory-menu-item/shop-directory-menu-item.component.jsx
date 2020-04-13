@@ -14,7 +14,7 @@ const ShopDirectoryMenuItem = ({
 }) => {
   return (
     <div
-      className={`${size} menu-item`}
+      className={`${size ? size : ""} menu-item`}
       onClick={() => history.push(`${match.url}${linkUrl}`)}
     >
       <div
