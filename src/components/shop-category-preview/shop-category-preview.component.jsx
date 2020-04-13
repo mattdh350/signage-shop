@@ -8,8 +8,8 @@ const ShopCategoryPreview = ({ title, color, items }) => {
     <div className={`shop-category-preview ${color}`}>
       <h1 className="title">{title.toUpperCase()}</h1>
       <div className="preview">
-        {items.slice(0, 4).map(({ id, ...otherItemProperties }) => (
-          <ShopItem key={id} {...otherItemProperties} />
+        {items.slice(0, 4).map((item) => (
+          <ShopItem key={item.id} item={item} />
         ))}
       </div>
     </div>

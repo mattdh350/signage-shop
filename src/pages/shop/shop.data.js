@@ -84,49 +84,49 @@ const SHOP_DATA = [
     routeName: "lg",
     items: [
       {
-        id: 1,
+        id: 10,
         name: 'UM3DF Series 49"',
         imageUrl:
           "https://www.lg.com/uk/images/business/md00061521/gallery/N01_medium09.jpg",
         price: 800,
       },
       {
-        id: 2,
+        id: 11,
         name: 'UM3DF Series 55"',
         imageUrl:
           "https://www.lg.com/uk/images/business/md00061521/gallery/N01_medium09.jpg",
         price: 1100,
       },
       {
-        id: 3,
+        id: 12,
         name: 'UM3DF Series 65"',
         imageUrl:
           "https://www.lg.com/uk/images/business/md00061521/gallery/N01_medium09.jpg",
         price: 1200,
       },
       {
-        id: 4,
+        id: 13,
         name: 'XE4F Series 49"',
         imageUrl:
           "https://www.lg.com/uk/images/business/digital-signage/md07501075/gallery/medium01.jpg",
         price: 1450,
       },
       {
-        id: 5,
+        id: 14,
         name: 'UH5F Series 55"',
         imageUrl:
           "https://www.lg.com/uk/business/images/information-display/digital-signage/BD00061561/gallery/medium01-COPY-1.jpg",
         price: 1000,
       },
       {
-        id: 6,
+        id: 15,
         name: 'UH5F Series 65"',
         imageUrl:
           "https://www.lg.com/uk/business/images/information-display/digital-signage/BD00061561/gallery/medium01-COPY-1.jpg",
         price: 1650,
       },
       {
-        id: 7,
+        id: 16,
         name: 'UH5F Series 98"',
         imageUrl:
           "https://www.lg.com/uk/business/images/information-display/digital-signage/BD00061561/gallery/medium01-COPY-1.jpg",
@@ -141,35 +141,35 @@ const SHOP_DATA = [
     color: "brightsign-purple",
     items: [
       {
-        id: 1,
+        id: 17,
         name: "Brightsign XT",
         imageUrl:
           "https://www.brightsign.biz/application/files/7015/2710/1198/XT1144-fancy.png",
         price: 900,
       },
       {
-        id: 2,
+        id: 18,
         name: "Brightsign XD",
         imageUrl:
           "https://www.brightsign.biz/application/files/1215/2710/5507/XT1034-fancy.png",
         price: 750,
       },
       {
-        id: 3,
+        id: 19,
         name: "Brightsign HD",
         imageUrl:
           "https://www.brightsign.biz/application/files/6415/4231/8196/HD1024-angle.png",
         price: 650,
       },
       {
-        id: 4,
+        id: 20,
         name: "Brightsign OPS",
         imageUrl:
           "https://www.brightsign.biz/application/files/7714/8425/9256/opel-front-productOverview.png",
         price: 600,
       },
       {
-        id: 5,
+        id: 21,
         name: "Brightsign LS",
         imageUrl:
           "https://www.brightsign.biz/application/files/1815/4231/8196/LS424-angle.png",
@@ -184,28 +184,28 @@ const SHOP_DATA = [
     routeName: "windows",
     items: [
       {
-        id: 1,
+        id: 22,
         name: "Advantech DS-370",
         imageUrl:
           "https://www.assured-systems.com/uploads/large/products/advantech/ds-370/ds-370-whitebackground.jpg",
         price: 450,
       },
       {
-        id: 2,
+        id: 23,
         name: "Nexcom NDiS B324R",
         imageUrl:
           "https://www.assured-systems.com/uploads/large/products/nexcom/b324r/8b3d9ca4-38f7-434d-b4e0-5bf6521e5732.jpg",
         price: 500,
       },
       {
-        id: 3,
+        id: 24,
         name: "Fanless Compact Digital Signage Player",
         imageUrl:
           "https://www.assured-systems.com/uploads/large/products/giada/q30/giada_q30_front.jpg",
         price: 300,
       },
       {
-        id: 4,
+        id: 25,
         name: "Nexcom NDiS B533 Fanless 4K",
         imageUrl:
           "https://www.assured-systems.com/product-images/c2884eb9-7c3c-4599-8b4a-3a53b321ed0c.jpg",
@@ -220,7 +220,7 @@ const SHOP_DATA = [
     routeName: "cms-bundles",
     items: [
       {
-        id: 1,
+        id: 26,
         name: "Signagelive 1 Year licence",
         imageUrl:
           "https://signagelive.com/wp-content/uploads/2015/03/SL_Color_onWhite_340.png",

@@ -1,10 +1,13 @@
 import React from "react";
+import { connect } from "react-redux";
 
 import FormButton from "../form-button/form-button.component";
+import { addItem } from "../../redux/cart/cart.actions";
 
 import "./shop-item.styles.scss";
 
-const ShopItem = ({ id, name, imageUrl, price }) => {
+const ShopItem = ({ item, addItem }) => {
+  const { name, imageUrl, price } = item;
   return (
     <div className="shop-item">
       <div
@@ -15,9 +18,15 @@ const ShopItem = ({ id, name, imageUrl, price }) => {
         <div className="name">{name}</div>
         <div className="price">${price}</div>
       </div>
-      <FormButton className="inverted">Add to cart</FormButton>
+      <FormButton onClick={() => addItem(item)} className="inverted">
+        Add to cart
+      </FormButton>
     </div>
   );
 };
 
-export default ShopItem;
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(ShopItem);
