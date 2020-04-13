@@ -18,6 +18,10 @@
       background-color: rgb(52, 104, 180);
       opacity: 1;
     }
+
+    -webkit-box-shadow: 6px 6px 21px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 6px 21px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 21px -4px rgba(0, 0, 0, 0.75);
   }
 
   &.large {

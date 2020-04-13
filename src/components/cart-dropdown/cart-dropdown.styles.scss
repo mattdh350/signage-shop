@@ -11,12 +11,21 @@
   right: 10px;
   z-index: 5;
   overflow: hidden;
+  -webkit-box-shadow: 6px 6px 21px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 21px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 21px -4px rgba(0, 0, 0, 0.75);
+
+  .empty-message {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 50px auto;
+  }
 
   .cart-items {
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   button {
